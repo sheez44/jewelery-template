@@ -1,0 +1,25 @@
+nav {
+	a {
+		color: @navbar-color;
+		&:hover, &:active {
+			color: @navbar-color-hover;
+		}
+	}
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+	background: none;
+}
+
+.navbar-brand {
+	font-size: @navbar-brand-font-size;
+	font-weight: @navbar-brand-font-weight;
+	text-transform: uppercase;
+}
+
+.nav > li > a[href^="http"] {
+	margin-right: 20px;
+	&:last-child {
+		margin-right: 0;
+	}
+}
