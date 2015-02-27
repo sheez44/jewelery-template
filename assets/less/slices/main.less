@@ -36,20 +36,49 @@ body {
 		margin-bottom: 125px;
 	}
 	&__title {
-		font-size: 30px;
-		font-weight: 700;
-		line-height: 40px;
-		color: #464646;
+		.title-default(40px);
 	}
 	&__subtitle {
-		font-weight: 300;
+		.subtitle-default;
+
 		font-size: 18px;
 		line-height: 30px;
-		color: #b7b7b7;
+	}
+	&__block {
+		margin-bottom: 77px;
+		&--title {
+			.title-default(40px, @font-size: 18px);
+			
+			margin-top: 0; // reset the margin to allow for perfect font icon bottom margin
+		}
+		&--text {
+			.subtitle-default;
+
+			line-height: 24px;
+			font-size: 16px;
+			margin-bottom: 0; // reset the margin to allow for perfect block bottom margin
+		}
 	}
 }
 
-.fa-home {
+span[icon] {
 	font-size: 64px;
 	color: red;
+	margin-bottom: 30px;
+}
+
+.arrow-left {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.arrow-left::before {
+	content: '\f053';
+	font-family: FontAwesome;
+}
+
+.arrow-right::before {
+	content: '\f054';
+
 }
