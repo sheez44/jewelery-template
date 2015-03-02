@@ -107,6 +107,10 @@ span[icon] {
 
 .our_strengths {
 	padding-top: 90px;
+	padding-bottom: 25px;
+	&__item-lockup {
+		margin-bottom: 75px;
+	}
 	&__side-title {
 		.aside-title-large;
 
@@ -123,5 +127,40 @@ span[icon] {
 		font-size: 16px;
 		color: #b7b7b7;
 		line-height: 24px;
+	}
+}
+
+.collection {
+	&__image {
+		float: left;
+	}
+	&__title {
+		.aside-title-large;
+
+		width: 50%;
+	}
+	&__subtitle {
+		.subtitle-default;
+
+		margin-top: 40px;
+	}
+	&__aside {
+		padding-left: 45px;
+		padding-top: 25px;
+	}
+}
+
+.aside__text {
+	.subtitle-default;
+
+	font-size: 16px;
+	line-height: 30px;
+	clear: both;
+	width: 85%;
+	padding-top: 55px;
+	&--right {
+		// &:extend(.aside__text);
+		// CREATE OWN MIXIN
+		// width: 120%:
 	}
 }
