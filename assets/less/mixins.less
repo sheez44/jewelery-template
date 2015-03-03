@@ -10,6 +10,13 @@
 	color: @clr;
 }
 
+.text-default {
+	.subtitle-default;
+
+	font-size: 16px;
+	line-height: 30px;
+}
+
 .vertical-center(@pos: absolute) {
 	position: @pos;
 	top: 50%;
@@ -29,4 +36,13 @@
 	font-size: 48px;
 	text-transform: uppercase;
 	line-height: 60px;
+}
+
+.comment-icon(@size: 38px; @bg: @bg-icon-comment-default) {
+	height: @size;
+	width: @size;
+	background-color: @bg;
+	float: left;
+	border-radius: 50%; 
+	color: white;
 }
