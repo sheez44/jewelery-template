@@ -1,0 +1,24 @@
+footer {
+	background: @bg-footer;
+	padding: 76px 0 75px;
+	color: @footer-color;
+}
+
+.footer {
+	&__title {
+		color: @white;
+		font-size: 24px;
+		margin: 0 0 78px;
+		text-transform: uppercase;
+	}
+	&__listitem {
+		margin-bottom: 6%;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		> a {
+			color: @footer-color;
+			font-size: 16px;
+		}
+	}
+}

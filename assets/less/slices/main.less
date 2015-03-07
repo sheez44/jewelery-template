@@ -2,6 +2,11 @@ body {
 	font-family: @font-primary;
 }
 
+ul, ol {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
 
 // Displays the history of the company just below the header
 .our_history {
@@ -154,6 +159,7 @@ span[icon] {
 .aside__text {
 	.text-default;
 
+	font-weight: 400;
 	clear: both;
 	width: 85%;
 	padding-top: 55px;
@@ -218,6 +224,7 @@ span[icon] {
 
 .photo-blog {
 	padding-top: 100px;
+	padding-bottom: 87px;
 	&__title {
 		.aside-title-large;
 
@@ -240,3 +247,23 @@ span[icon] {
 		}
 	}
 }
+
+.social {
+	&__listitem {
+		display: inline;
+		font-size: 36px;
+		line-height: 30px;
+		margin-right: 8%;
+		text-align: right;
+		&:last-child {
+			margin-right: 0;
+		}
+		> a {
+		color: @footer-color;
+		}
+	}
+	h4 {
+			text-align: right;
+	}
+}
+
