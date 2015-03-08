@@ -90,6 +90,24 @@ span[icon] {
 	}
 }
 
+.carousel-control.left, .carousel-control.right {
+	background-image: inherit;
+}
+
+.carousel-control {
+	.vertical-center;
+
+	font-size: 3em;
+	color: #797979;
+	&:hover, &:active, &:focus {
+		color: @red-accent;
+	}
+}
+
+.carousel img {
+	max-width: 400px;
+}
+
 .arrow-left {
 	.vertical-center();
 	.arrow();
