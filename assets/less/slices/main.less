@@ -249,6 +249,10 @@ span[icon] {
 }
 
 .social {
+	&__list {
+		margin-bottom: 75px;
+		text-align: right;
+	}
 	&__listitem {
 		display: inline;
 		font-size: 36px;
@@ -259,11 +263,12 @@ span[icon] {
 			margin-right: 0;
 		}
 		> a {
-		color: @footer-color;
+			color: @footer-color;
+			transition: color 0.7s ease-out;
+			&:hover {
+				color: @red-accent;
+			}
 		}
-	}
-	h4 {
-			text-align: right;
 	}
 }
 
