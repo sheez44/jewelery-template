@@ -1,4 +1,7 @@
 .jumbotron {
 	background-image: url('../build/img/header.png');
 	height: @jumbotron-header-height;
+	@media @md, @sm, @xs {
+		height: 100%;
+	}
 }
