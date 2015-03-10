@@ -42,12 +42,16 @@ ul, ol {
 
 .information {
 	padding-top: 88px;
-	@media @xs {
+	@media @xs, @sm {
 		padding-top: 5%; 
 	}
 	&__headers {
 		text-align: center;
 		margin-bottom: 125px;
+		@media @sm {
+			padding-bottom: 8%;
+			margin-bottom: 0;
+		}
 		@media @xs {
 			margin-bottom: 0;
 			padding-bottom: 5%; 
@@ -64,13 +68,25 @@ ul, ol {
 	}
 	&__block {
 		margin-bottom: 77px;
+		@media @xs {
+			margin-bottom: 5%;
+			border-bottom: 1px dashed #eee;
+			padding-bottom: 5%;
+		}
 		&:nth-child(1n + 4) {
 			margin-bottom: 95px;
+			@media @xs {
+				margin-bottom: 5%;
+			}
 		}
 		&--title {
 			.title-default(40px, @font-size: 18px);
 			
 			margin-top: 0; // reset the margin to allow for perfect font icon bottom margin
+			@media @xs {
+				margin-bottom: 0;
+				font-size: 15px;
+			}
 		}
 		&--text {
 			.subtitle-default;
@@ -82,11 +98,19 @@ ul, ol {
 	}
 }
 
+.icons__container {
+	@media @xs {
+		text-align: center;
+	}
+}
 
 span[icon] {
 	font-size: 64px;
 	color: red;
 	margin-bottom: 30px;
+	@media @xs {
+		margin-bottom: 1%;
+	}
 }
 
 .gallery {
@@ -107,6 +131,9 @@ span[icon] {
 
 .gallery-container {
 	height: 400px;
+	@media @sm {
+		height: 670px;
+	}
 }
 
 .carousel-control.left, .carousel-control.right {
@@ -125,6 +152,12 @@ span[icon] {
 
 .carousel img {
 	max-width: 400px;
+}
+
+.carousel-inner .item {
+	@media @sm {
+		text-align: center;
+	}
 }
 
 .arrow-left {
@@ -150,13 +183,22 @@ span[icon] {
 .our_strengths {
 	padding-top: 90px;
 	padding-bottom: 25px;
+	@media @xs, @sm {
+		padding-top: 0;
+	}
 	&__item-lockup {
 		margin-bottom: 75px;
+		@media @xs, @sm {
+			margin-bottom: 5%;
+		}
 	}
 	&__side-title {
 		.aside-title-large;
 
 		margin-top: 90px;
+		@media @xs, @sm {
+			margin-top: 5%;
+		}
 	}
 	&__item-title {
 		font-weight: bold;
@@ -174,13 +216,24 @@ span[icon] {
 
 .collection {
 	padding-bottom: 90px;
+	@media @xs {
+		text-align: center;
+		padding-bottom: 5%;
+	}
 	&__image {
 		float: left;
+		@media @xs {
+			float: none;
+			margin-bottom: 2%;
+		}
 	}
 	&__title {
 		.aside-title-large;
 
 		width: 50%;
+		@media @xs, @sm {
+			width: 100%;
+		}
 	}
 	&__subtitle {
 		.subtitle-default;
@@ -190,6 +243,14 @@ span[icon] {
 	&__aside {
 		padding-left: 45px;
 		padding-top: 25px;
+		@media @xs, @sm {
+			padding-left: 0;
+		}
+	}
+	&__side-container {
+		@media @xs {
+			clear: both;
+		}
 	}
 }
 
@@ -200,8 +261,16 @@ span[icon] {
 	clear: both;
 	width: 85%;
 	padding-top: 55px;
+	@media @xs {
+		width: 90%;
+		text-align: left;
+		margin: 0 auto;
+	}
 	&--right {
 		width: 115%;
+		@media @xs, @md {
+			width: 90%;
+		}
 	}
 }
 
@@ -262,17 +331,31 @@ span[icon] {
 .photo-blog {
 	padding-top: 100px;
 	padding-bottom: 87px;
+	@media @xs {
+		padding-top: 0;
+	}
 	&__title {
 		.aside-title-large;
 
 		margin-top: 74px;
 		margin-bottom: 0;
-		width: 60%; 
+		width: 60%;
+		@media @xs, @sm {
+			width: 100%;
+			text-align: center;
+		} 
+		@media @xs {
+			padding-top: 5%;
+		}
 	}
 	&__subtitle {
 		.subtitle-default;
 		margin-top: 56px;		
 		margin-bottom: 56px;
+		@media @xs, @sm {
+			text-align: center;
+			margin: 1em;
+		} 
 	}
 	&__text {
 		.text-default;
@@ -281,6 +364,11 @@ span[icon] {
 		&--right {
 			clear: both;
 			padding-top: 85px;
+		}
+	}
+	&__side-container {
+		@media @xs {
+			clear: both;
 		}
 	}
 }
