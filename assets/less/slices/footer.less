@@ -1,29 +1,51 @@
 footer {
+	@media @xs {
+		text-align: center;
+		padding: 10% 0;
+	}
+
 	background: @bg-footer;
 	padding: 76px 0 75px;
 	color: @footer-color;
 }
 
+
 .footer {
+
 	&__title {
 		color: @white;
 		font-size: 24px;
 		margin: 0 0 78px;
 		text-transform: uppercase;
+		@media @xs, @sm {
+			margin: 0 0 10%;
+			color: @footer-color;
+			text-shadow: 1px 0 1px @white;
+		}
 	}
 	&__listitem {
 		margin-bottom: 6%;
+
 		&:last-child {
 			margin-bottom: 0;
+			@media @xs, @sm {
+				margin-bottom: 6%;
+			}
 		}
 		> a {
 			color: @footer-color;
 			font-size: 16px;
+			@media @xs, @sm {
+				color: white;
+			}
 		}
 	}
 	&__copyright {
 		text-align: right;
 		font-size: 16px;
 		line-height: 24px;
+		@media @xs, @sm {
+			text-align: center;
+		}
 	}
 }
